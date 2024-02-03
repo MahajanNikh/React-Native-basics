@@ -40,33 +40,56 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     paddingHorizontal: 8,
-    padding:6,
-
-    
     textAlign: 'center',
-    
   },
-  card: {},
-  cardElement: {},
+  card: {
+    width: 330,
+    height: 390,
+    borderRadius: 6,
+    marginVertical: 12,
+    marginHorizontal: 16,
+  },
+  cardElement: {
+    backgroundColor: 'white',
+    elevation: 3,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+  },
   cardImage: {
     height: 180,
+    marginBottom: 8,
+    borderRadius: 6,
   },
   cardBody: {
-    margin: 6,
+    flex: 1,
+    flexGrow: 1,
+    paddingHorizontal: 8,
   },
   cardHeading: {
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
-    
-  },
-  cardDescription: {
-    textAlign: 'justify',
+    color: 'black',
   },
   cardLabel: {
     textAlign: 'right',
+    fontSize: 16,
+    color: 'black',
+    marginBottom: 4
+  },
+  cardDescription: {
+    color: 'black',
+    fontSize: 14,
+    marginBottom: 12,
+    marginTop: 6,
+    flexShrink: 1,
+    textAlign:'justify'
   },
   cardFooter: {
-    textAlign: 'right',
+    textAlign: 'center',
+    color: 'black',
+    marginBottom:6
   },
 });
